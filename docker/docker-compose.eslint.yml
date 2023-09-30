@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  eslit_container:
+    container_name: eslint-container
+    build:
+      context: ../
+      dockerfile: ./docker/eslintContainer/Dockerfile
+    tty: true
+    volumes:
+      - ../src/setting:/app/setting:ro
+      - ../service:/app/service
+    command: sh -c "yarn eslint ${FIX_OPTION} --config ./setting/.eslintrc.json 'service/**/*.js'"
+
+
