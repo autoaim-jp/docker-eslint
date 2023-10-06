@@ -9,7 +9,7 @@ services:
     tty: true
     volumes:
       - ../src/setting:/app/setting:ro
-      - ../service:/app/service
+      - ../../../service:/app/service
     command: sh -c "yarn eslint ${FIX_OPTION} --config ./setting/.eslintrc.json 'service/**/*.js'"
 
 
