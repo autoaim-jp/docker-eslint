@@ -82,6 +82,9 @@
     "no-param-reassign": [2, { "props": false }],
 
     // allow continue
-    "no-continue": "off"
+    "no-continue": "off",
+
+    // ignore unresolved files, packages
+    "import/no-unresolved": "off"
   }
 }
