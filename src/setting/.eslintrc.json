@@ -1,5 +1,5 @@
 {
-  "ignorePatterns": ["**/ignored-by-eslintrc.js", "node_modules", "xdevkit"],
+  "ignorePatterns": ["**/ignored-by-eslintrc.js", "node_modules", "xdevkit", "build"],
   "env": {
     "es2022": true,
     "browser": true
