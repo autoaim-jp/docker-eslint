@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  eslit_container:
+  eslint_container:
     container_name: eslint-container
     build:
       context: ../
