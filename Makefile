@@ -3,6 +3,8 @@ PHONY=default help reset check eslint-rebuild eslint-build eslint-up eslint-up-f
 
 .PHONY: $(PHONY)
 
+SERVICE_PATH?=../service
+
 default: help
 
 reset: reset-sample-service
@@ -28,9 +30,9 @@ check-diff:
 	diff -r service.sample service || true
 
 docker-compose-up-eslint-fix:
-	FIX_OPTION="--fix" docker compose -p docker-eslint -f ./docker/docker-compose.eslint.yml up --abort-on-container-exit
+	SERVICE_PATH=${SERVICE_PATH} FIX_OPTION="--fix" docker compose -p docker-eslint -f ./docker/docker-compose.eslint.yml up --abort-on-container-exit
 docker-compose-up-eslint:
-	FIX_OPTION="" docker compose -p docker-eslint -f ./docker/docker-compose.eslint.yml up --abort-on-container-exit
+	SERVICE_PATH=${SERVICE_PATH} FIX_OPTION="" docker compose -p docker-eslint -f ./docker/docker-compose.eslint.yml up --abort-on-container-exit
 
 docker-compose-build-eslint:
 	docker compose -p docker-eslint -f ./docker/docker-compose.eslint.yml build
