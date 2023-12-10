@@ -7,8 +7,13 @@ services:
       dockerfile: ./docker/eslintContainer/Dockerfile
     tty: true
     volumes:
+      # for test
+      #      - ../service:/app/service
+      # for xdevkit
+      #      - ../../../../service:/app/service
+      - ${SERVICE_PATH}:/app/service
       - ../src/setting:/app/setting:ro
-      - ../../../../service:/app/service
+ 
     command: sh -c "yarn eslint ${FIX_OPTION} --config ./setting/.eslintrc.json 'service/**/*.js'"
 
 
