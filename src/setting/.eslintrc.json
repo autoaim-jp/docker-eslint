@@ -5,7 +5,8 @@
     "browser": true
   },
   "globals": {
-    "argNamed": false
+    "argNamed": false,
+    "logger": false
   },
   "plugins": [
     "import",
