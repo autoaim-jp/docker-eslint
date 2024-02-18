@@ -5,7 +5,9 @@
     "browser": true
   },
   "globals": {
-    "argNamed": false
+    "argNamed": false,
+    "logger": false,
+    "Alpine": false
   },
   "plugins": [
     "import",
