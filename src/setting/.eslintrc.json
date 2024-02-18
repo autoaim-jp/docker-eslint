@@ -6,7 +6,8 @@
   },
   "globals": {
     "argNamed": false,
-    "logger": false
+    "logger": false,
+    "Alpine": false
   },
   "plugins": [
     "import",
