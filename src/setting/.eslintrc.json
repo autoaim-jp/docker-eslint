@@ -1,5 +1,5 @@
 {
-  "ignorePatterns": ["**/ignored-by-eslintrc.js", "node_modules", "xdevkit", "build", "test"],
+  "ignorePatterns": ["**/ignored-by-eslintrc.js", "node_modules", "xdevkit", "build", "test", "**/_lib/_alpinejs/dist/**"],
   "env": {
     "es2022": true,
     "browser": true
