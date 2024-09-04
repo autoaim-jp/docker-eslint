@@ -1,5 +1,5 @@
 {
-  "ignorePatterns": ["**/ignored-by-eslintrc.js", "node_modules", "xdevkit", "build", "test", "**/_lib/_alpinejs/dist/**"],
+  "ignorePatterns": ["**/ignored-by-eslintrc.js", "node_modules", "xdevkit", "build", "test", "**/_lib/_alpinejs/dist/**", "**/_lib/_chartjs/**"],
   "env": {
     "es2022": true,
     "browser": true
